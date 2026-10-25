@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeLearn — O‘rganish platformasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-bg"></div>
+
+    <header class="navbar">
+        <a class="logo" href="#" id="homeButton">Free<span>Learn</span></a>
+
+        <nav id="navigation">
+            <a href="#home">Bosh sahifa</a>
+            <a href="#subjects">Fanlar</a>
+            <a href="#about">Biz haqimizda</a>
+        </nav>
+
+        <button class="menu-button" id="menuButton">☰</button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">BILIM OLING · KELAJAKNI YARATING</span>
+                <h1>O‘rganing. <span>Yarating.</span><br>Rivojlaning.</h1>
+                <p>Ingliz tili, dasturlash va matematikani bitta joyda o‘rganing. Har bir fandagi mavzular, tushuntirishlar va mashqlar siz uchun.</p>
+                <a class="primary-button" href="#subjects">O‘rganishni boshlash ↗</a>
+
+                <div class="hero-stats">
+                    <div><strong>03</strong><span>Fanlar</span></div>
+                    <div><strong>100+</strong><span>Mavzular uchun asos</span></div>
+                    <div><strong>FREE</strong><span>Bepul foydalanish</span></div>
+                </div>
+            </div>
+
+            <div class="hero-art">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="art-card">
+                    <div class="art-top"><span></span><span></span><span></span></div>
+                    <p><span class="purple">const</span> future = {</p>
+                    <p class="indent">learn: <span class="green">true</span>,</p>
+                    <p class="indent">practice: <span class="green">true</span>,</p>
+                    <p class="indent">success: <span class="blue">"you"</span></p>
+                    <p>};</p>
+                    <div class="art-bottom">➜ Ready to learn<span class="blink">_</span></div>
+                </div>
+                <div class="floating-label label-one">⌘ Programming</div>
+                <div class="floating-label label-two">✦ Keep learning</div>
+            </div>
+        </section>
+
+        <section class="subjects section" id="subjects">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">O‘QUV MARKAZI</span>
+                    <h2>O‘z yo‘nalishingizni <span>tanlang</span></h2>
+                </div>
+                <p>Fanni tanlang, kerakli mavzuni toping va o‘rganishni boshlang.</p>
+            </div>
+
+            <div class="subject-grid">
+                <button class="subject-card" data-subject="english">
+                    <div class="subject-icon english-icon">文</div>
+                    <span class="subject-tag">LANGUAGE</span>
+                    <h3>English</h3>
+                    <p>Grammatika, so‘zlar, speaking, listening va boshqa mavzular.</p>
+                    <div class="subject-footer"><span id="englishCount">Mavzular</span><span>↗</span></div>
+                </button>
+
+                <button class="subject-card" data-subject="programming">
+                    <div class="subject-icon programming-icon">&lt;/&gt;</div>
+                    <span class="subject-tag">TECHNOLOGY</span>
+                    <h3>Programming</h3>
+                    <p>HTML, CSS, JavaScript va kod yozish mashqlari.</p>
+                    <div class="subject-footer"><span id="programmingCount">Mavzular</span><span>↗</span></div>
+                </button>
+
+                <button class="subject-card" data-subject="math">
+                    <div class="subject-icon math-icon">∑</div>
+                    <span class="subject-tag">SCIENCE</span>
+                    <h3>Mathematics</h3>
+                    <p>Arifmetika, algebra, tenglamalar, geometriya va masalalar.</p>
+                    <div class="subject-footer"><span id="mathCount">Mavzular</span><span>↗</span></div>
+                </button>
+            </div>
+        </section>
+
+        <section class="learning section" id="learning" hidden>
+            <button class="back-button" id="backButton">← Barcha fanlar</button>
+            <div id="learningContent"></div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about-box">
+                <div class="about-logo">F<span>.</span></div>
+                <div>
+                    <span class="eyebrow">FREELEARN MAQSADI</span>
+                    <h2>Bilim olish hamma uchun ochiq.</h2>
+                    <p>FreeLearn — turli fanlarni bosqichma-bosqich o‘rganish, amaliy mashqlar bajarish va yangi ko‘nikmalarni rivojlantirish uchun yaratilgan loyiha.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a class="logo" href="#home">Free<span>Learn</span></a>
+        <p>Bilim — kelajakka sarmoya.</p>
+        <span>© <span id="year"></span> FreeLearn</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
